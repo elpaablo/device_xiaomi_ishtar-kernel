@@ -71,6 +71,7 @@ typedef unsigned long old_sigset_t;
 #define __ARCH_HAS_SA_RESTORER
 #endif
 
+#if 0
 struct sigaction {
 	__sighandler_t sa_handler;
 	unsigned long sa_flags;
@@ -79,6 +80,7 @@ struct sigaction {
 #endif
 	sigset_t sa_mask;		/* mask last for extensibility */
 };
+#endif
 
 typedef struct sigaltstack {
 	void *ss_sp;
